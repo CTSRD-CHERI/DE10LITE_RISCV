@@ -25,7 +25,7 @@ DE10LITE_quartus/**/*.smsg
 DE10LITE_quartus/**/*.sof
 DE10LITE_quartus/**/*.sopc_builder
 DE10LITE_quartus/**/*.summary
-DE10LITE_quartus/**/*.tcl
+#DE10LITE_quartus/**/*.tcl
 DE10LITE_quartus/**/*.txt # Explicitly add any text files used
 DE10LITE_quartus/**/*~
 DE10LITE_quartus/**/*example*
