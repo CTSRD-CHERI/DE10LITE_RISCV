@@ -3,43 +3,46 @@ software/**/*.o
 software/**/*.hex
 
 # ignore Quartus II generated files
-DE10Lite-quartus/**/*_generation_script*
-DE10Lite-quartus/**/*_inst.vhd
-DE10Lite-quartus/**/*.bak
-DE10Lite-quartus/**/*.cmp
-DE10Lite-quartus/**/*.done
-DE10Lite-quartus/**/*.eqn
-DE10Lite-quartus/**/*.hex
-DE10Lite-quartus/**/*.html
-DE10Lite-quartus/**/*.jdi
-DE10Lite-quartus/**/*.jpg
-DE10Lite-quartus/**/# *.mif
-DE10Lite-quartus/**/*.pin
-DE10Lite-quartus/**/*.pof
-DE10Lite-quartus/**/*.ptf.*
-DE10Lite-quartus/**/*.qar
-DE10Lite-quartus/**/*.qarlog
-DE10Lite-quartus/**/*.qws
-DE10Lite-quartus/**/*.rpt
-DE10Lite-quartus/**/*.smsg
-DE10Lite-quartus/**/*.sof
-DE10Lite-quartus/**/*.sopc_builder
-DE10Lite-quartus/**/*.summary
-DE10Lite-quartus/**/*.tcl
-DE10Lite-quartus/**/*.txt # Explicitly add any text files used
-DE10Lite-quartus/**/*~
-DE10Lite-quartus/**/*example*
-DE10Lite-quartus/**/*sopc_*
-#DE10Lite-quartus/**/*.sdc # Keep timing files
+DE10LITE_quartus/**/*_generation_script*
+DE10LITE_quartus/**/*_inst.vhd
+DE10LITE_quartus/**/*.bak
+DE10LITE_quartus/**/*.cmp
+DE10LITE_quartus/**/*.done
+DE10LITE_quartus/**/*.eqn
+DE10LITE_quartus/**/*.hex
+DE10LITE_quartus/**/*.html
+DE10LITE_quartus/**/*.jdi
+DE10LITE_quartus/**/*.jpg
+DE10LITE_quartus/**/# *.mif
+DE10LITE_quartus/**/*.pin
+DE10LITE_quartus/**/*.pof
+DE10LITE_quartus/**/*.ptf.*
+DE10LITE_quartus/**/*.qar
+DE10LITE_quartus/**/*.qarlog
+DE10LITE_quartus/**/*.qws
+DE10LITE_quartus/**/*.rpt
+DE10LITE_quartus/**/*.smsg
+DE10LITE_quartus/**/*.sof
+DE10LITE_quartus/**/*.sopc_builder
+DE10LITE_quartus/**/*.summary
+DE10LITE_quartus/**/*.tcl
+DE10LITE_quartus/**/*.txt # Explicitly add any text files used
+DE10LITE_quartus/**/*~
+DE10LITE_quartus/**/*example*
+DE10LITE_quartus/**/*sopc_*
+#DE10LITE_quartus/**/*.sdc # Keep timing files
 
 # ignore Quartus II generated folders
-DE10Lite-quartus/**/db/
-DE10Lite-quartus/**/incremental_db/
-DE10Lite-quartus/**/simulation/
-DE10Lite-quartus/**/timing/
-DE10Lite-quartus/**/testbench/
-DE10Lite-quartus/**/*_sim/
-DE10Lite-quartus/**/incremental_db/
-DE10Lite-quartus/**/db/
-DE10Lite-quartus/**/_output_files/
-DE10Lite-quartus/**/PLLJ_PLLSPE_INFO.txt
+DE10LITE_quartus/**/db/
+DE10LITE_quartus/**/incremental_db/
+DE10LITE_quartus/**/simulation/
+DE10LITE_quartus/**/timing/
+DE10LITE_quartus/**/testbench/
+DE10LITE_quartus/**/*_sim/
+DE10LITE_quartus/**/incremental_db/
+DE10LITE_quartus/**/db/
+DE10LITE_quartus/**/_output_files/
+DE10LITE_quartus/**/output_files/
+DE10LITE_quartus/**/PLLJ_PLLSPE_INFO.txt
+DE10LITE_quartus/**/.qsys_edit/
+DE10LITE_quartus/**/synthesis/
