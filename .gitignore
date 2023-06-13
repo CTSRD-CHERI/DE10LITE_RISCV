@@ -1,6 +1,6 @@
-software/**.dump
-software/**.o
-software/**.hex
+software/**/*.dump
+software/**/*.o
+software/**/*.hex
 
 # ignore Quartus II generated files
 DE10Lite-quartus/**/*_generation_script*
