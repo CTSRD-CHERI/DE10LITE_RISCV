@@ -1,0 +1,3 @@
+[submodule "Flute"]
+	path = Flute
+	url = https://github.com/CTSRD-CHERI/Flute.git
