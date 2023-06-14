@@ -39,7 +39,7 @@ synth_in: qsys
 synth: | synth_in report
 
 .PHONY: refresh_prog
-refresh_prog:
+refresh_prog: version
 	@echo regenerating initialisation...
 	@$(QUARTUS)_cdb DE10LITE_RISCV -c DE10LITE_RISCV --update_mif $(FILTER)
 	@echo rebuilding bitfile...
