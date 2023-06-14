@@ -3,7 +3,7 @@ QSYS ?= qsys-generate
 VERSION ?= "18.1.0"
 FREQ_MHZ ?= 25000000 # XXX Just used for FMax computation. Not yet passed into quartus
 
-FILTER = 2>&1 | grep -e 'ERROR: ' -e 'CRITICAL WARNING: ' || [ $$? -lt 2 ]
+FILTER = 2>&1 | grep -e 'Error (.*): ' -e 'Critical Warning (.*): ' || [ $$? -lt 2 ]
 
 .PHONY: error
 error:
@@ -40,12 +40,15 @@ synth: | synth_in report
 
 .PHONY: refresh_prog
 refresh_prog:
-	$(QUARTUS)_cdb DE10LITE_RISCV -c DE10LITE_RISCV --update_mif $(FILTER)
-	$(QUARTUS)_asm DE10LITE_RISCV -c DE10LITE_RISCV $(FILTER)
+	@echo regenerating initialisation...
+	@$(QUARTUS)_cdb DE10LITE_RISCV -c DE10LITE_RISCV --update_mif $(FILTER)
+	@echo rebuilding bitfile...
+	@$(QUARTUS)_asm DE10LITE_RISCV -c DE10LITE_RISCV $(FILTER)
 
 .PHONY: program
 program:
-	$(QUARTUS)_pgm -m jtag program.cdf $(FILTER)
+	@echo programming...
+	@$(QUARTUS)_pgm -m jtag program.cdf $(FILTER)
 
 .PHONY: clean
 clean:
