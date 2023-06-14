@@ -30,8 +30,9 @@ DE10LITE_quartus/**/*.txt # Explicitly add any text files used
 DE10LITE_quartus/**/*~
 DE10LITE_quartus/**/*example*
 DE10LITE_quartus/**/*sopc*
-DE10LITE_quartus/**/.xml
-DE10LITE_quartus/**/.bsf
+DE10LITE_quartus/**/*.xml
+DE10LITE_quartus/**/*.bsf
+DE10LITE_quartus/**/*.rpt.*
 #DE10LITE_quartus/**/*.sdc # Keep timing files
 
 # ignore Quartus II generated folders
