@@ -1,8 +1,8 @@
-#DE10LITE\_RISCV
+# DE10LITE\_RISCV
 
 This is a project for putting a RISC-V core on the DE10Lite board.
 
-##Dependencies
+## Dependencies
 
 Expects `quartus_*` and `qsys-generate` to be in path.
 Alternatively, you can specify the path to the `quartus` binary and `qsys-generate` binary with `QUARTUS=<path> QSYS=<path>` environment variables.
@@ -16,7 +16,7 @@ To program, you may need to install `92-usbblaster.rules` in `/etc/udev/rules.d/
 These need to be refreshed with a reboot or `udevadm control --reload-rules && udevadm trigger`.
 You may also need to run `jtagconfig`.
 
-##Software
+## Software
 
 See `software/DE10Lite.h` for definitions of address map.
 `heartbeat.S` is a very simple example program that copies the state of the switches to the LEDs.
@@ -26,7 +26,7 @@ See `software/DE10Lite.h` for definitions of address map.
 `make program` will then copy this bitfile onto the board.
 `make refresh_and_prog` will do all of these things and is the default Makefile target.
 
-##Building a bitfile
+## Building a bitfile
 
 Ensure you have checked out the relevant core submodule (e.g. Flute) with `git submodule update --init --recursive`.
 `make synth` will build the verilog from the Bluespec, and build a bitfile with Quartus.
