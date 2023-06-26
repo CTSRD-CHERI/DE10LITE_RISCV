@@ -1,3 +1,9 @@
 [submodule "Flute"]
 	path = Flute
 	url = https://github.com/CTSRD-CHERI/Flute.git
+[submodule "muntjac"]
+	path = muntjac
+	url = git@github.com:CTSRD-CHERI/muntjac.git
+[submodule "CheriFlute"]
+	path = CheriFlute
+	url = git@github.com:CTSRD-CHERI/Flute.git

@@ -73,7 +73,7 @@
          type = "int";
       }
    }
-   element flute_0
+   element RISCV_PROC_PLACEHOLDER_0
    {
       datum _sortIndex
       {
@@ -468,7 +468,7 @@
   <parameter name="inputClockFrequency" value="0" />
   <parameter name="resetSynchronousEdges" value="NONE" />
  </module>
- <module name="flute_0" kind="flute" version="1.0" enabled="1">
+ <module name="RISCV_PROC_PLACEHOLDER_0" kind="RISCV_PROC_PLACEHOLDER" version="1.0" enabled="1">
   <parameter name="AUTO_CPU_EXTERNAL_INTERRUPT_INTERRUPTS_USED" value="15" />
  </module>
  <module
@@ -615,13 +615,13 @@
  <connection
    kind="avalon"
    version="18.1"
-   start="flute_0.master0"
+   start="RISCV_PROC_PLACEHOLDER_0.master0"
    end="onchip_memory2.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04020000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="avalon" version="18.1" start="flute_0.master0" end="sdram.s1">
+ <connection kind="avalon" version="18.1" start="RISCV_PROC_PLACEHOLDER_0.master0" end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
@@ -629,7 +629,7 @@
  <connection
    kind="avalon"
    version="18.1"
-   start="flute_0.master1"
+   start="RISCV_PROC_PLACEHOLDER_0.master1"
    end="jtag_uart.avalon_jtag_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04041040" />
@@ -638,7 +638,7 @@
  <connection
    kind="avalon"
    version="18.1"
-   start="flute_0.master1"
+   start="RISCV_PROC_PLACEHOLDER_0.master1"
    end="sysid_qsys.control_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04041048" />
@@ -647,23 +647,23 @@
  <connection
    kind="avalon"
    version="18.1"
-   start="flute_0.master1"
+   start="RISCV_PROC_PLACEHOLDER_0.master1"
    end="altpll_0.pll_slave">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04041030" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="avalon" version="18.1" start="flute_0.master1" end="key.s1">
+ <connection kind="avalon" version="18.1" start="RISCV_PROC_PLACEHOLDER_0.master1" end="key.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04041020" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="avalon" version="18.1" start="flute_0.master1" end="sdram.s1">
+ <connection kind="avalon" version="18.1" start="RISCV_PROC_PLACEHOLDER_0.master1" end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="avalon" version="18.1" start="flute_0.master1" end="timer.s1">
+ <connection kind="avalon" version="18.1" start="RISCV_PROC_PLACEHOLDER_0.master1" end="timer.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04041000" />
   <parameter name="defaultConnection" value="false" />
@@ -671,7 +671,7 @@
  <connection
    kind="avalon"
    version="18.1"
-   start="flute_0.master1"
+   start="RISCV_PROC_PLACEHOLDER_0.master1"
    end="onchip_memory2.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04020000" />
@@ -680,13 +680,13 @@
  <connection
    kind="avalon"
    version="18.1"
-   start="flute_0.master1"
+   start="RISCV_PROC_PLACEHOLDER_0.master1"
    end="switch_in.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04050000" />
   <parameter name="defaultConnection" value="false" />
  </connection>
- <connection kind="avalon" version="18.1" start="flute_0.master1" end="led_out.s1">
+ <connection kind="avalon" version="18.1" start="RISCV_PROC_PLACEHOLDER_0.master1" end="led_out.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04050010" />
   <parameter name="defaultConnection" value="false" />
@@ -703,7 +703,7 @@
    version="18.1"
    start="altpll_0.c0"
    end="onchip_memory2.clk1" />
- <connection kind="clock" version="18.1" start="altpll_0.c1" end="flute_0.clock" />
+ <connection kind="clock" version="18.1" start="altpll_0.c1" end="RISCV_PROC_PLACEHOLDER_0.clock" />
  <connection
    kind="clock"
    version="18.1"
@@ -712,28 +712,28 @@
  <connection
    kind="interrupt"
    version="18.1"
-   start="flute_0.cpu_external_interrupt"
+   start="RISCV_PROC_PLACEHOLDER_0.cpu_external_interrupt"
    end="key.irq">
   <parameter name="irqNumber" value="0" />
  </connection>
  <connection
    kind="interrupt"
    version="18.1"
-   start="flute_0.cpu_external_interrupt"
+   start="RISCV_PROC_PLACEHOLDER_0.cpu_external_interrupt"
    end="jtag_uart.irq">
   <parameter name="irqNumber" value="1" />
  </connection>
  <connection
    kind="interrupt"
    version="18.1"
-   start="flute_0.cpu_external_interrupt"
+   start="RISCV_PROC_PLACEHOLDER_0.cpu_external_interrupt"
    end="timer.irq">
   <parameter name="irqNumber" value="2" />
  </connection>
  <connection
    kind="interrupt"
    version="18.1"
-   start="flute_0.cpu_external_interrupt"
+   start="RISCV_PROC_PLACEHOLDER_0.cpu_external_interrupt"
    end="switch_in.irq">
   <parameter name="irqNumber" value="3" />
  </connection>
@@ -762,7 +762,7 @@
    kind="reset"
    version="18.1"
    start="clk_50.clk_reset"
-   end="flute_0.reset" />
+   end="RISCV_PROC_PLACEHOLDER_0.reset" />
  <connection
    kind="reset"
    version="18.1"

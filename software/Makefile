@@ -8,7 +8,7 @@ heartbeat.dump: heartbeat.o
 	riscv64-unknown-freebsd-objdump -S $< > $@
 
 heartbeat.o: heartbeat.S
-	riscv64-unknown-freebsd-cc -fpic -march=rv64ima -mabi=lp64 -mno-relax -c $< -o $@
+	riscv64-unknown-freebsd-cc -fpic -march=rv64ima$(EXTENSIONS) -mabi=lp64 -mno-relax -c $< -o $@
 
 .PHONY: clean
 clean:
